@@ -1,6 +1,6 @@
 <template>
-  <section class="relative min-w-full min-h-screen">
-    <ImageComponent src="/SECCION3.png" custom-class="h-full" />
+  <section class="flex relative min-w-full min-h-screen">
+    <ImageComponent src="/SECCION3.png" height="100%" />
     <div class="absolute  right-0 bottom-72 flex flex-col items-center">
       <div style="width: 1107.18px; height: 3.23px; background: linear-gradient(90deg, #CEDF00 0%, #92BA00 100%)"></div>
       <div class=" flex flex-col justify-center items-center w-[800px] flex-shrink-0">

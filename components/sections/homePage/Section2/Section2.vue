@@ -13,9 +13,9 @@
         </div>
       </div>
 
-      <div v-for="item in components" :key="item.name" class="flex self-start gap-3 mb-3 items-center h-[89px]">
+      <div v-for="item in components" :key="item.name" class="ml-32 flex self-start gap-3 mb-3 items-center h-[89px]">
         <div class="flex gap-6 ">
-          <div @mouseover="setActiveComponent(item.name)" class="cursor-pointer">
+          <div @click="setActiveComponent(item.name)" class="cursor-pointer">
             <component :is="item.component" class=" w-16" :style="{ color: item.color }" :fontControlled="false" />
           </div>
         </div>

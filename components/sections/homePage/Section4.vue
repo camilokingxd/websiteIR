@@ -1,7 +1,6 @@
 <template>
-  <section class="relative min-w-full min-h-screen">
+  <section class="flex relative min-w-full min-h-screen">
     <ImageComponent src="/SECCION4.png" height="100%" />
-
 
     <div class="absolute  w-[800px] right-1 bottom-[20%]">
       <div class="flex flex-col mb-6">
@@ -15,7 +14,7 @@
           style="width: 500px; height: 7.76px; background: linear-gradient(90deg, #CEDF00 0%, #92BA00 100%)"></div>
       </div>
 
-      <div class="carousel w-[800px] ">
+      <div class="carousel w-[800px] h-[550px] ">
         <div id="slide1" class="carousel-item relative w-full flex-col">
           <div class="bg-white w-full relative h-32 flex-shrink-0">
             <div class="absolute flex justify-normal transform left-[40%] bottom-[40%]">

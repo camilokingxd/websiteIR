@@ -16,7 +16,7 @@
 
       <div class="flex flex-col gap-6">
         <div class="flex gap-6 items-center">
-          <div @click="setActiveComponent('codify')" class='cursor-pointer'>
+          <div @mouseover="setActiveComponent('codify')" class='cursor-pointer'>
             <Codify class=" w-24" style="color: #C6DA00 ;" :fontControlled="false" />
           </div>
           <div style="width: 2.88px; height: 89.17px; background:  #C6DA00;"></div>
@@ -28,7 +28,7 @@
         </div>
 
         <div class="flex gap-6 items-center">
-          <div @click="setActiveComponent('services')" class='cursor-pointer'>
+          <div @mouseover="setActiveComponent('services')" class='cursor-pointer'>
 
             <Services class="w-24" style="color: #20ACA4 ;" :fontControlled="false" />
           </div>
