@@ -1,7 +1,7 @@
 <template>
   <section class="flex relative min-w-full min-h-screen">
 
-    <ImageComponent src="/SECCION2.png" height="100%" />
+    <ImageComponent src="/SECCION2.png" height="100%" class="w-full object-fill" />
 
     <div class="flex flex-col box-border justify-center items-center absolute right-0 bottom-0 lg:bottom-[10%]">
       <div class="flex flex-col mb-7">

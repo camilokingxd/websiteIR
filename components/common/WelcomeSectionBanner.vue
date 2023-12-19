@@ -24,10 +24,10 @@
           <p>Nuestra Filosofia</p>
         </div>
         <div class="flex justify-start w-full py-4 gap-2">
-          <a href="#item1" class="btn btn-xs btn-circle bg-slate-200"></a>
-          <a href="#item2" class="btn btn-xs btn-circle bg-slate-200"></a>
-          <a href="#item3" class="btn btn-xs btn-circle bg-slate-200"></a>
-          <a href="#item4" class="btn btn-xs btn-circle bg-slate-200"></a>
+          <a href="#item1" class="btn btn-xs btn-circle bg-slate-200" @click="selectItem(0)"></a>
+          <a href="#item2" class="btn btn-xs btn-circle bg-slate-200" @click="selectItem(1)"></a>
+          <a href="#item3" class="btn btn-xs btn-circle bg-slate-200" @click="selectItem(2)"></a>
+          <a href="#item4" class="btn btn-xs btn-circle bg-slate-200" @click="selectItem(3)"></a>
         </div>
       </div>
     </div>
@@ -37,7 +37,13 @@
 </template>
 
 <script lang="ts" setup>
+import { defineEmits } from 'vue';
 
+const emit = defineEmits(['select-carousel-item']);
+
+function selectItem(index: any) {
+  emit('select-carousel-item', index);
+}
 </script>
 
 <style>

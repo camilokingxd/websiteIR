@@ -1,6 +1,6 @@
 <template>
   <section class="flex relative min-w-full min-h-screen">
-    <ImageComponent src="/SECCION1.png" height="100%" />
+    <ImageComponent src="/SECCION1.png" class="w-full object-fill" />
 
     <div class="flex flex-col box-border justify-center items-center absolute right-0 bottom-1/4">
       <div class="flex flex-col mb-7">
