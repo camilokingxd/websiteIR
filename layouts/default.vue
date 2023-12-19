@@ -1,4 +1,5 @@
 <template>
+  <SpeedInsights />
   <div v-if=isLoading
     class="relative flex justify-center items-center h-screen opacity-90 bg-gradient-to-r from-[rgba(0,58,49,0.50)] to-black">
     <ImageComponent src="/LoadingImage.png"
@@ -16,12 +17,13 @@
 </template>
 
 <script lang="ts" setup>
+import { SpeedInsights } from "@vercel/speed-insights/vue"
 import { onMounted, ref } from 'vue';
 const isLoading = ref(true);
 
-// onMounted(async () => {
-//   isLoading.value = false;
-// });
+onMounted(async () => {
+  isLoading.value = false;
+});
 
 
 </script>

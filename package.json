@@ -16,12 +16,13 @@
     "daisyui": "^4.4.2",
     "eslint": "^8.54.0",
     "nuxt": "^3.8.2",
-    "vue": "^3.3.10",
     "nuxt-svgo": "^3.6.0",
+    "vue": "^3.3.10",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
     "@nuxt/image": "^1.1.0",
+    "@vercel/speed-insights": "^1.0.2",
     "devalue": "^4.3.2"
   }
 }
