@@ -3,6 +3,10 @@
     <div v-for="(item, index) in carouselItems" :key="item.id" :id="item.id"
       :class="{ 'carousel-item w-full carouselItem': true, 'active': index === activeIndex }">
       <ImageComponent :src="item.src" :alt="item.alt" class="w-full object-fill" />
+      <p
+        class="w-[1250px] absolute right-12 bottom-16 xl:bottom-36 text-right text-white text-2xl font-semibold font-['Poppins']">
+        {{ item.description }}
+      </p>
     </div>
   </div>
 </template>
@@ -14,7 +18,7 @@ const activeIndex = ref(0);
 
 const carouselItems = ref([
   {
-    src: "/firstBanner.jpeg", alt: "firstBanner", id: "item1"
+    src: "/firstBanner.jpeg", alt: "firstBanner", id: "item1", description: "Intelligent Reservoir, una empresa en continua evolución, ofrece una nueva generación de servicios durante la perforación de pozos estratigráficos, exploratorios y de desarrollo de hidrocarburos, tanto en convencionales como no convencionales donde somos pioneros en Latinoamérica"
   },
   {
     src: "/SECCION8.png", alt: "SECCION8", id: "item2"
@@ -38,7 +42,7 @@ onMounted(() => {
 
   const interval = setInterval(updateCarousel, 3000);
 
-  this?.$on('select-carousel-item', updateActiveIndex);
+
   onUnmounted(() => {
     clearInterval(interval);
   });

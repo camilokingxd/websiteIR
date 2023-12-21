@@ -51,7 +51,7 @@
     </div>
 
     <div class="navbar-end z-20">
-      <SearchButtom class="mr-24" />
+
       <div class="bg-gradient-to-r from-yellow-400 to-lime-500"></div>
       <div class="text-white text-[29.02px] font-bold font-['Poppins']">Acceder</div>
     </div>
