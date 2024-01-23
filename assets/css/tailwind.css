@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color-default: #252b30;
+  background-color: #252b30;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-default: #252b30;
+  }
+}
+[data-theme='dark'] {
+  --color-default: #252b30;
+}
