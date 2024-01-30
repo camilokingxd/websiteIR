@@ -1,10 +1,10 @@
 <template>
-  <div class="carousel w-full relative h-screen" ref="carousel">
+  <div class="carousel w-[430px] h-[426px] md:w-full  relative lg:h-screen " ref="carousel">
     <div v-for="(item, index) in carouselItems" :key="item.id" :id="item.id"
       :class="{ 'carousel-item w-full carouselItem': true, 'active': index === activeIndex }">
       <ImageComponent :src="item.src" :alt="item.alt" class="w-full object-fill" />
       <p
-        class="w-[1250px] absolute right-12 bottom-16 xl:bottom-36 text-right text-white text-2xl font-semibold font-['Poppins']">
+        class="w-[394px] h-[36px] font-medium text-[10px] text-center md:w-[1250px] absolute right-12 bottom-16 xl:bottom-36 md:text-right text-white md:text-2xl md:font-semibold font-['Poppins']">
         {{ item.description }}
       </p>
     </div>

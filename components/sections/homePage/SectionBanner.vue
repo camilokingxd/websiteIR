@@ -1,5 +1,5 @@
 <template>
-  <section class="relative min-w-full min-h-screen">
+  <section class="relative min-w-full h-[426px] md:min-h-screen ">
     <SocialMediaSidebar />
     <Carousel />
     <WelcomeSectionBanner />
