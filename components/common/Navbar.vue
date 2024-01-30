@@ -1,8 +1,20 @@
 <template>
-  <div class="navbar w-[430px] h-[60px] bg-gradient-to-t from-teal-950 to-black md:w-full">
-
+  <div class="navbar w-[430px] h-[60px] bg-gradient-to-t from-teal-950 to-black md:w-full md:h-full">
+    <!-- <div class="absolute w-full hidden lg:block" style="background-color: transparent;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="287" viewBox="0 0 1920 287" fill="none">
+        <path
+          d="M1920.99 178.244C1915.51 187.926 1905.46 195.595 1892.19 196.708L1883.75 197.426L52.25 286.679C25.14 288.945 1.35 268.549 0 240.221L0.42 210.588L0.24 208.241V0.171991L1921.08 0L1920.99 178.244Z"
+          fill="url(#paint0_linear_605_2549)" />
+        <defs>
+          <linearGradient id="paint0_linear_605_2549" x1="966.53" y1="287.865" x2="966.53" y2="1.01171"
+            gradientUnits="userSpaceOnUse">
+            <stop offset="1.08445e-07" stop-color="#003A31" stop-opacity="0.5" />
+            <stop offset="1" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div> -->
     <div class="navbar-start ml-2">
-
       <Icon class="z-20 w-[30px] md:w-[130px]" />
       <div class="w-full h-[112.92px] relative hidden lg:block">
         <div
@@ -31,7 +43,7 @@
       </ul>
     </div>
 
-    <div class="navbar-end z-20">
+    <div class="navbar-end z-20 lg:hidden">
       <div class="dropdown dropdown-end">
         <label tabindex="0" class="btn btn-circle swap swap-rotate ">
           <input type="checkbox" />

@@ -1,5 +1,5 @@
 <template>
-  <div class="carousel w-[430px] h-[426px] md:w-full  relative lg:h-screen " ref="carousel">
+  <div class="carousel w-[430px] h-[426px] md:w-full relative md:h-screen " ref="carousel">
     <div v-for="(item, index) in carouselItems" :key="item.id" :id="item.id"
       :class="{ 'carousel-item w-full carouselItem': true, 'active': index === activeIndex }">
       <ImageComponent :src="item.src" :alt="item.alt" class="w-full object-fill" />
