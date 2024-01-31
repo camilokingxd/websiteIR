@@ -1,5 +1,5 @@
 <template>
-  <div class="carousel w-[430px] h-[426px] md:w-full relative md:h-screen " ref="carousel">
+  <div class="carousel  h-[426px] md:w-full relative md:h-screen " ref="carousel">
     <div v-for="(item, index) in carouselItems" :key="item.id" :id="item.id"
       :class="{ 'carousel-item w-full carouselItem': true, 'active': index === activeIndex }">
       <ImageComponent :src="item.src" :alt="item.alt" class="w-full object-fill" />
@@ -21,7 +21,7 @@ const carouselItems = ref([
     src: "/firstBanner.jpeg", alt: "firstBanner", id: "item1", description: "Intelligent Reservoir, una empresa en continua evolución, ofrece una nueva generación de servicios durante la perforación de pozos estratigráficos, exploratorios y de desarrollo de hidrocarburos, tanto en convencionales como no convencionales donde somos pioneros en Latinoamérica"
   },
   {
-    src: "/SECCION8.png", alt: "SECCION8", id: "item2"
+    src: "/Banner2.png", alt: "SECCION8", id: "item2"
   },
   {
     src: "/Banner3.png", alt: "Banner3", id: "item3"

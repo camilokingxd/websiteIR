@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar w-[430px] h-[60px] bg-gradient-to-t from-teal-950 to-black md:w-full md:h-full">
+  <div class="navbar  h-[60px] bg-gradient-to-t from-teal-950 to-black md:w-full md:h-full">
     <!-- <div class="absolute w-full hidden lg:block" style="background-color: transparent;">
       <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="287" viewBox="0 0 1920 287" fill="none">
         <path
@@ -45,7 +45,7 @@
 
     <div class="navbar-end z-20 lg:hidden">
       <div class="dropdown dropdown-end">
-        <label tabindex="0" class="btn btn-circle swap swap-rotate ">
+        <label tabindex="0" class="btn btn-circle swap swap-rotate">
           <input type="checkbox" />
           <svg class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
             viewBox="0 0 512 512">
