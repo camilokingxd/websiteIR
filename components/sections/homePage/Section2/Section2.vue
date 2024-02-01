@@ -1,10 +1,14 @@
 <template>
-  <section class="flex relative min-w-full min-h-screen">
+  <section class="flex relative min-w-full sm:min-h-screen">
 
-    <ImageComponent src="/SECCION2.png" height="100%" class="w-full object-fill" />
-
-    <div class="flex flex-col box-border justify-center items-center absolute right-0 bottom-0 lg:bottom-[10%]">
-      <div class="flex flex-col mb-7">
+    <div class="w-full h-[320px] sm:min-h-screen">
+      <ImageComponent src="/SECCION2.png" alt="Desktop Image"
+        class="w-full h-full object-fill hidden sm:block min-h-screen" />
+      <ImageComponent src="/Seccion2Mobile.png" alt="Mobile Image" class="w-full h-full object-cover block sm:hidden" />
+    </div>
+    <div
+      class="ml-5 md:ml-0 md:flex flex-col box-border justify-center items-center absolute  md:right-0 bottom-0 lg:bottom-[10%]">
+      <div class="hidden md:flex flex-col mb-7">
         <p class="w-[939.19px] text-white text-lg xl:text-3xl  text-right font-semibold font-['Poppins'] self-end">
           Durante la perforacion, los datos geologicos y mecanicos se registran como fuente principal de informacion
         </p>
@@ -13,20 +17,21 @@
         </div>
       </div>
 
-      <div v-for="item in components" :key="item.name" class="ml-32 flex self-start gap-3 mb-3 items-center h-[89px]">
+      <div v-for="item in components" :key="item.name"
+        class="ml-0 md:ml-32 flex self-start gap-3 mb-3 items-center md:h-[89px]">
         <div class="flex gap-6 ">
           <div @click="setActiveComponent(item.name)" class="cursor-pointer">
-            <component :is="item.component" class=" w-16" :style="{ color: item.color }" :fontControlled="false" />
+            <component :is="item.component" class=" w-8 sm:w-16" :style="{ color: item.color }" :fontControlled="false" />
           </div>
         </div>
-        <div :style="{ width: '2.88px', height: '89.17px', background: item.color }"></div>
-        <div class="w-36 h-14 self-center">
-          <p class="text-white font-['Poppins'] font-medium text-base top-3 ">
+        <div class="w-[2.88px] h-6 sm:h-20" :style="{ background: item.color }"></div>
+        <div class="">
+          <p class=" md:text-base top-3 text-white font-['Poppins'] font-medium text-sm">
             {{ item.text }}
           </p>
         </div>
 
-        <div v-if="activeComponent === item.name">
+        <div class="hidden md:block" v-if="activeComponent === item.name">
           <component :is="item.vector" />
         </div>
       </div>
