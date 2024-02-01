@@ -7,7 +7,7 @@
     </div>
     <div
       class="btn btn-circle btn-active  bg-white shadow-xl w-40 h-5 flex flex-col justify-center items-center absolute right-0 top-32 ">
-      <p class="text-xs font-['Poppins']">Mas Informacion</p>
+      <p class="text-xs font-normal font-['Poppins'] text-black">Mas Informacion</p>
     </div>
 
     <div class="absolute left-10 top-20 flex flex-col gap-4">
@@ -35,6 +35,10 @@
         <ImageComponent src="/MaskHome.png" class="w-[160px] " :fontControlled="false" />
         <p class="right-0 top-5 absolute text-center text-white text-xs font-semibold font-['Poppins'] leading-normal">
           Todo comienza en el pozo</p>
+        <div
+          class="btn btn-circle btn-active  bg-white shadow-xl w-40 h-5 flex flex-col justify-center items-center absolute right-0 top-32 ">
+          <p class="text-xs font-normal text-black font-['Poppins']">Mas Informacion</p>
+        </div>
       </div>
     </div>
   </div>
