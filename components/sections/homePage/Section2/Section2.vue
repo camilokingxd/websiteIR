@@ -1,13 +1,13 @@
 <template>
   <section class="flex relative min-w-full sm:min-h-screen">
 
-    <div class="w-full h-[320px] sm:min-h-screen">
-      <ImageComponent src="/SECCION2.png" alt="Desktop Image"
+    <div class="w-full h-[320px] sm:h-screen">
+      <ImageComponent height="100%" src="/SECCION2.png" alt="Desktop Image"
         class="w-full h-full object-fill hidden sm:block min-h-screen" />
       <ImageComponent src="/Seccion2Mobile.png" alt="Mobile Image" class="w-full h-full object-cover block sm:hidden" />
     </div>
     <div
-      class="ml-5 md:ml-0 md:flex flex-col box-border justify-center items-center absolute  md:right-0 bottom-0 lg:bottom-[10%]">
+      class="ml-5 md:ml-0 md:flex flex-col box-border justify-center items-center absolute  md:right-0 bottom-5 lg:bottom-[10%]">
       <div class="hidden md:flex flex-col mb-7">
         <p class="w-[939.19px] text-white text-lg xl:text-3xl  text-right font-semibold font-['Poppins'] self-end">
           Durante la perforacion, los datos geologicos y mecanicos se registran como fuente principal de informacion
@@ -26,7 +26,7 @@
         </div>
         <div class="w-[2.88px] h-6 sm:h-20" :style="{ background: item.color }"></div>
         <div class="">
-          <p class=" md:text-base top-3 text-white font-['Poppins'] font-medium text-sm">
+          <p class="md:text-base top-3 text-white font-['Poppins'] font-medium text-sm w-[100px] md:w-full">
             {{ item.text }}
           </p>
         </div>
@@ -36,6 +36,21 @@
         </div>
       </div>
 
+    </div>
+    <div style="border-radius:15px 0px 0px 15px; background: linear-gradient(268.18deg, #CEDF00 9.85%, #92BA00 42.83%);"
+      class="w-72 h-16 absolute top-[290px] right-0 z-20">
+      <p class="text-black text-center text-xs font-medium font-['Poppins']">Ofrecer un desarrollo innovador en cuanto a
+        tecnología en recopilación de información de rocas y fluidos para
+        maximizar los datos adquiridos durante la perforación. </p>
+      <div class="absolute right-0">
+        <ImageComponent src="/MaskHome.png" class="w-[160px] " :fontControlled="false" />
+        <p class="right-0 top-5 absolute text-center text-white text-xs font-semibold font-['Poppins'] leading-normal">
+          Todo comienza en el pozo</p>
+        <div
+          class="btn btn-circle btn-active  bg-white shadow-xl w-40 h-5 flex flex-col justify-center items-center absolute right-0 top-32 ">
+          <p class="text-xs font-normal text-black font-['Poppins']">Mas Informacion</p>
+        </div>
+      </div>
     </div>
   </section>
 </template>
