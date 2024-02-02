@@ -39,11 +39,23 @@
         <p class="text-white font-['Poppins'] text-sm md:text-2xl font-normal">Experiencia </p>
       </div>
     </div>
-    <div style="border-radius:15px 0px 0px 15px; background: linear-gradient(268.18deg, #CEDF00 9.85%, #92BA00 42.83%);"
-      class=" right-0 -bottom-7 absolute sm:hidden w-72 h-16 z-20  flex items-center">
-      <p class="text-black text-center text-xs font-medium font-['Poppins']">Durante la perforación los datos geológicos y
-        mecánicos se registran como fuente principal de información </p>
+
+    <div class="md:hidden flex absolute right-0 -bottom-28 z-50 flex-col">
+      <div style="border-radius:15px 0px 0px 15px; background: linear-gradient(268.18deg, #CEDF00 9.85%, #92BA00 42.83%);"
+        class=" right-0  sm:hidden w-72 h-16 z-20  flex items-center">
+        <p class="text-black text-center text-xs font-medium font-['Poppins']">Durante la perforación los datos geológicos
+          y
+          mecánicos se registran como fuente principal de información </p>
+
+      </div>
+      <div class="flex flex-col items-center self-end relative">
+        <ImageComponent src="/MaskHome.png" class="w-[160px] " :fontControlled="false" />
+        <p class="absolute top-1/4 text-center text-white text-xs font-semibold font-['Poppins'] leading-normal">
+          Nuestro
+          equipo</p>
+      </div>
     </div>
+
   </section>
 </template>
 
