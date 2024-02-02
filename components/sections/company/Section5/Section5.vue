@@ -44,7 +44,7 @@
             section.label }}
           <IniciosButton class="w-8 h-8 " :style="{ color: section.color }" :fontControlled="false" />
         </button>
-        <div v-show="section.showSecondButton">
+        <div class="hidden lg:block" v-show="section.showSecondButton">
           <component :is="section.vector" />
         </div>
 
