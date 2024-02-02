@@ -7,7 +7,7 @@
         class="w-full h-full object-cover block sm:hidden opacity-70" />
     </div>
 
-    <div class="w-[165px] absolute flex flex-col items-center bottom-28 ">
+    <div class="md:hidden w-[165px] absolute flex flex-col items-center bottom-28 ">
       <div v-for="item in development" :key="item.alt">
         <ImageComponent :src="item.source" :alt="item.alt" height="100%" :width="item.width" />
       </div>
