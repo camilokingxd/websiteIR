@@ -38,7 +38,7 @@
 
     </div>
     <div style="border-radius:15px 0px 0px 15px; background: linear-gradient(268.18deg, #CEDF00 9.85%, #92BA00 42.83%);"
-      class="w-72 h-16 absolute top-[290px] right-0 z-20">
+      class="block sm:hidden w-72 h-16 absolute top-[290px] right-0 z-20">
       <p class="text-black text-center text-xs font-medium font-['Poppins']">Ofrecer un desarrollo innovador en cuanto a
         tecnología en recopilación de información de rocas y fluidos para
         maximizar los datos adquiridos durante la perforación. </p>
