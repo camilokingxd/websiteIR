@@ -1,10 +1,14 @@
 <template>
-  <section class="relative w-full flex min-h-screen">
-    <ImageComponent src="/SECCION5.png" height="100%" />
-
-    <SocialMediaSidebar />
+  <section class="relative w-full flex md:min-h-screen">
+    <div class="w-full h-[320px] sm:h-screen">
+      <ImageComponent height="100%" src="/SECCION5.png" alt="Desktop Image"
+        class="w-full h-full object-fill hidden sm:block min-h-screen" />
+      <ImageComponent src="/Seccion5Mobile.png" alt="Mobile Image"
+        class="w-full h-full object-cover block sm:hidden opacity-70" />
+    </div>
+    <!-- <SocialMediaSidebar /> -->
     <div
-      class="absolute left-10 bottom-[20%] flex w-[562px] max-w-full flex-col items-stretch ml-14 mt-24 mb-3 max-md:mt-10">
+      class="hidden absolute left-10 bottom-[20%] md:flex w-[562px] max-w-full flex-col  ml-14 mt-24 mb-3 max-md:mt-10">
       <p class="w-[386px] h-[86.07px] text-white text-[54.68px] font-semibold font-['Poppins']">
         Breve Historia
       </p>
@@ -14,10 +18,8 @@
       </button>
     </div>
 
-
-
-    <div class="flex flex-col self-start absolute right-0 top-1/4 w-[800px]">
-      <div class="flex flex-col mb-7">
+    <div class="flex flex-col self-start absolute ml-9 md:ml-0 md:right-0 top-14 md:top-1/4  md:w-[800px]">
+      <div class="hidden md:flex flex-col mb-7">
 
         <p class="w-[391px] text-white text-lg xl:text-3xl   font-semibold font-['Poppins'] self-end">
           Breve historia
@@ -27,15 +29,15 @@
         </div>
       </div>
 
-      <div v-for="section in sections" :key="section.name" class="flex items-center gap-5 mb-10 cursor-pointer h-[60px] "
-        @click="toggleButton(section.name)">
+      <div v-for="section in sections" :key="section.name"
+        class="flex items-center gap-2 md:gap-5 md:mb-10 cursor-pointer h-[60px] " @click="toggleButton(section.name)">
         <div class="flex">
-          <component :is="section.icon" class="w-9 h-11" :fontControlled="false" :style="{ color: section.color }" />
-
+          <component :is="section.icon" class="w-4 h-6 md:w-9 md:h-11" :fontControlled="false"
+            :style="{ color: section.color }" />
         </div>
 
         <button v-show="!section.showSecondButton"
-          class=" btn btn-ghost hover:bg-transparent  text-white font-['Poppins'] text-2xl font-normal">{{
+          class=" btn btn-ghost hover:bg-transparent  text-white font-['Poppins'] text-sm md:text-2xl font-normal">{{
             section.label }}
         </button>
         <button v-show="section.showSecondButton" :style="{ borderColor: section.color }"
@@ -47,6 +49,14 @@
           <component :is="section.vector" />
         </div>
 
+      </div>
+    </div>
+
+    <div class="md:hidden flex absolute right-0  flex-col">
+      <div class="flex flex-col items-center self-end relative">
+        <ImageComponent src="/MaskHome.png" class="w-[160px] " :fontControlled="false" />
+        <p class="absolute top-1/4 text-center text-white text-xs font-semibold font-['Poppins'] leading-normal">
+          Nuestros desarrollos</p>
       </div>
     </div>
   </section>

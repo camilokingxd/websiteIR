@@ -1,5 +1,5 @@
 <template>
-  <section class="relative w-full flex min-h-screen">
+  <section class="relative w-full hidden md:flex md:min-h-screen">
     <ImageComponent src="/SECCION7.png" height="100%" />
     <div
       class="absolute left-10 bottom-[15%] flex w-[562px] max-w-full flex-col items-stretch ml-14 mt-24 mb-3 max-md:mt-10">
