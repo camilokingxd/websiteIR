@@ -6,11 +6,6 @@
       <ImageComponent src="/Seccion7Mobile.png" alt="Mobile Image"
         class="w-full h-full object-cover block sm:hidden opacity-70" />
     </div>
-
-
-
-
-
     <div
       class="absolute left-10 bottom-[15%] hidden md:flex w-[562px] max-w-full flex-col items-stretch ml-14 mt-24 mb-3 max-md:mt-10">
       <p class=" h-[86.07px] text-white text-[54.68px] font-semibold font-['Poppins']">
@@ -20,7 +15,7 @@
     </div>
 
     <div class="absolute  flex flex-col mt-4 w-[169px] md:hidden top-16 left-14 ">
-      <p class=" mr-6 w-[640px] text-white text-sm md:text-lg xl:text-2xl   font-semibold font-['Poppins'] ">
+      <p class=" mr-6 w-[130px] md:w-[640px] text-white text-sm md:text-lg xl:text-2xl   font-semibold font-['Poppins'] ">
         Nuestras Alma Maters
       </p>
       <ImageComponent src="/AlmaMater.png" height="100%" />
