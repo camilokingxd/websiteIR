@@ -6,6 +6,8 @@
       <ImageComponent src="/Seccion6Mobile.png" alt="Mobile Image"
         class="w-full h-full object-cover block sm:hidden opacity-70" />
     </div>
+    <SocialMediaSidebar />
+
     <div class="md:hidden flex absolute top-0  z-50 flex-col">
       <div class="flex flex-col items-center self-end relative">
         <ImageComponent src="/MaskCompany.png" class="w-[160px] " :fontControlled="false" />

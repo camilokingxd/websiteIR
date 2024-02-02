@@ -6,6 +6,11 @@
       <ImageComponent src="/Seccion7Mobile.png" alt="Mobile Image"
         class="w-full h-full object-cover block sm:hidden opacity-70" />
     </div>
+
+
+
+
+
     <div
       class="absolute left-10 bottom-[15%] hidden md:flex w-[562px] max-w-full flex-col items-stretch ml-14 mt-24 mb-3 max-md:mt-10">
       <p class=" h-[86.07px] text-white text-[54.68px] font-semibold font-['Poppins']">
@@ -14,8 +19,15 @@
 
     </div>
 
+    <div class="absolute  flex flex-col mt-4 w-[169px] md:hidden top-16 left-14 ">
+      <p class=" mr-6 w-[640px] text-white text-sm md:text-lg xl:text-2xl   font-semibold font-['Poppins'] ">
+        Nuestras Alma Maters
+      </p>
+      <ImageComponent src="/AlmaMater.png" height="100%" />
+    </div>
+
     <div
-      class="flex flex-col mb-7 right-0 absolute top-10 md:top-44 w-[393px] md:w-[900px] h-[135px] md:h-[650px] justify-between items-center bg-[#00000099] md:bg-transparent">
+      class="flex flex-col mb-7 right-0 absolute top-40 md:top-44 w-[393px] md:w-[900px] h-[135px] md:h-[650px] justify-between items-center bg-[#00000099] md:bg-transparent">
       <div class=" hidden md:block w-full h-2 self-end"
         style=" background: linear-gradient(90deg, #CEDF00 0%, #92BA00 100%)">
       </div>

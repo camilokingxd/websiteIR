@@ -6,7 +6,6 @@
       <ImageComponent src="/Seccion5Mobile.png" alt="Mobile Image"
         class="w-full h-full object-cover block sm:hidden opacity-70" />
     </div>
-    <SocialMediaSidebar />
     <div
       class="hidden absolute left-10 bottom-[20%] md:flex w-[562px] max-w-full flex-col  ml-14 mt-24 mb-3 max-md:mt-10">
       <p class="w-[386px] h-[86.07px] text-white text-[54.68px] font-semibold font-['Poppins']">
