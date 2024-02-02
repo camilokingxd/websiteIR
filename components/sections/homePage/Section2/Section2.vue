@@ -37,21 +37,24 @@
       </div>
 
     </div>
-    <div style="border-radius:15px 0px 0px 15px; background: linear-gradient(268.18deg, #CEDF00 9.85%, #92BA00 42.83%);"
-      class="block sm:hidden w-72 h-16 absolute top-[290px] right-0 z-20">
-      <p class="text-black text-center text-xs font-medium font-['Poppins']">Ofrecer un desarrollo innovador en cuanto a
-        tecnología en recopilación de información de rocas y fluidos para
-        maximizar los datos adquiridos durante la perforación. </p>
-      <div class="absolute right-0">
+    <div class="flex absolute right-0 mt-72 z-50 flex-col">
+      <div style="border-radius:15px 0px 0px 15px; background: linear-gradient(268.18deg, #CEDF00 9.85%, #92BA00 42.83%);"
+        class=" sm:hidden w-72 h-16  z-20  flex items-center">
+        <p class="text-black text-center text-xs font-medium font-['Poppins']">Durante la perforación los datos geológicos
+          y
+          mecánicos se registran como fuente principal de información </p>
+      </div>
+      <div class="flex flex-col items-center self-end relative">
         <ImageComponent src="/MaskHome.png" class="w-[160px] " :fontControlled="false" />
-        <p class="right-0 top-5 absolute text-center text-white text-xs font-semibold font-['Poppins'] leading-normal">
+        <p class="right-0 absolute top-1/4 text-center text-white text-xs font-semibold font-['Poppins'] leading-normal">
           Todo comienza en el pozo</p>
-        <div
-          class="btn btn-circle btn-active  bg-white shadow-xl w-40 h-5 flex flex-col justify-center items-center absolute right-0 top-32 ">
-          <p class="text-xs font-normal text-black font-['Poppins']">Mas Informacion</p>
-        </div>
+      </div>
+      <div
+        class="btn btn-circle btn-active bg-white shadow-xl mt-20 w-40 h-5 flex flex-col justify-center items-center absolute right-0 top-32 ">
+        <p class="text-xs font-normal text-black font-['Poppins']">Mas Informacion</p>
       </div>
     </div>
+
   </section>
 </template>
 
