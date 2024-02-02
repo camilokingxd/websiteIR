@@ -1,12 +1,17 @@
 <template>
-  <section class="min-h-screen">
-    <ImageComponent src="/SECCION8.png" class="min-h-screen" />
-    <div class="flex flex-col right-0 absolute top-40 w-[900px] h-[650px]  items-end">
-      <p class="mr-3 w-[640px] text-white text-lg xl:text-2xl text-right font-semibold font-['Poppins'] ">
+  <section class=" flex md:min-h-screen relative">
+    <div class="w-full h-[500px] sm:h-screen">
+      <ImageComponent height="100%" src="/SECCION8.png" alt="Desktop Image"
+        class="w-full h-full object-fill hidden sm:block min-h-screen" />
+      <ImageComponent src="/Seccion8Mobile.png" alt="Mobile Image"
+        class="w-full h-full object-cover block sm:hidden opacity-70" />
+    </div>
+    <div class="hidden md:flex flex-col right-0 absolute md:top-40 w-[900px]  items-end">
+      <p class=" mr-3 w-[640px] text-white text-lg xl:text-2xl text-right font-semibold font-['Poppins'] ">
         Somos un grupo de profesionales multidisciplinarios con experiencia en los sectores de I+D, Academia,
         Gubernamental,Servicios y E&P.
       </p>
-      <div class="w-[800px] h-2  self-end " style=" background: linear-gradient(90deg, #CEDF00 0%, #92BA00 100%)">
+      <div class="w-[800px] h-2 self-end " style=" background: linear-gradient(90deg, #CEDF00 0%, #92BA00 100%)">
       </div>
       <div class="flex w-[800px] h-2/3 justify-evenly mt-10">
         <div class="flex flex-col gap-5 ">
@@ -40,11 +45,18 @@
       </div>
 
     </div>
+    <div class="md:hidden flex absolute top-0  z-50 flex-col">
+      <div class="flex flex-col items-center self-end relative">
+        <ImageComponent src="/MaskCompany.png" class="w-[160px] " :fontControlled="false" />
+        <p class="absolute top-1/4 text-center text-white text-xs font-semibold font-['Poppins'] leading-normal">
+          Nuestros servicios</p>
+      </div>
+    </div>
+    <MobileSeccion8 />
   </section>
 </template>
 
 <script lang="ts" setup>
-import { ref } from "vue";
 
 import AnalisisGrano from "~/assets/AnalisisGrano.svg";
 import AnalisisServices from "~/assets/AnalisisServices.svg";
@@ -58,9 +70,6 @@ import Geoquimica from "~/assets/Geoquimica.svg";
 import GeoquimicaServices from "~/assets/GeoquimicaServices.svg";
 import PerforacionServices from "~/assets/PerforacionServices.svg";
 import PetrografiaServices from "~/assets/PetrografiaServices.svg";
-
-const activeComponent = ref("");
-
 
 const components = [
   {

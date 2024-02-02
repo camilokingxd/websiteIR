@@ -26,17 +26,19 @@
       </div>
       <div class="self-stretch flex basis-[0%] flex-col items-stretch">
         <div class="text-white text-base font-semibold">ENLACES</div>
-        <div class="text-stone-300 text-base font-medium whitespace-nowrap mt-10">
-          Inicio
-        </div>
+
+        <Link class="text-stone-300 text-base font-medium whitespace-nowrap mt-10" to="/">Inicio</Link>
+
         <div class="text-stone-300 text-base font-medium whitespace-nowrap mt-7">
-          Compañía
+          <Link to="company">Compañía</Link>
         </div>
         <div class="text-stone-300 text-base font-medium whitespace-nowrap mt-6">
-          Servicios
+          <Link to="services">Servicios</Link>
+
         </div>
         <div class="text-stone-300 text-base font-medium whitespace-nowrap mt-7">
-          Contactos
+          <Link to="contact">Contactos</Link>
+
         </div>
       </div>
       <div class="flex grow basis-[0%] flex-col items-stretch self-start">
@@ -83,6 +85,7 @@
 </template>
 
 <script lang="ts" setup>
+import Link from '~/components/common/Link.vue';
 
 </script>
 
