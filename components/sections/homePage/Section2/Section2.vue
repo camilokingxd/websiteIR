@@ -46,8 +46,8 @@
       </div>
       <div class="flex flex-col items-center self-end relative">
         <ImageComponent src="/MaskHome.png" class="w-[160px] " :fontControlled="false" />
-        <p class="right-0 absolute top-1/4 text-center text-white text-xs font-semibold font-['Poppins'] leading-normal">
-          Todo comienza en el pozo</p>
+        <p class="absolute top-1/4 text-center text-white text-xs font-semibold font-['Poppins'] leading-normal">
+          Nuestra filosofía</p>
       </div>
       <div
         class="btn btn-circle btn-active bg-white shadow-xl mt-20 w-40 h-5 flex flex-col justify-center items-center absolute right-0 top-32 ">

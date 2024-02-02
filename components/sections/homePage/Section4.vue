@@ -1,8 +1,20 @@
 <template>
-  <section class="flex relative min-w-full min-h-screen">
-    <ImageComponent src="/SECCION4.png" height="100%" class="w-full object-fill" />
+  <section class="flex relative min-w-full md:min-h-screen">
+    <div class="w-full h-[320px] sm:h-screen">
+      <ImageComponent height="100%" src="/SECCION4.png" alt="Desktop Image"
+        class="w-full h-full object-fill hidden sm:block min-h-screen" />
+      <ImageComponent src="/Seccion4Mobile.png" alt="Mobile Image"
+        class="w-full h-full object-cover block sm:hidden opacity-70" />
+    </div>
 
-    <div class="absolute  w-[800px] right-1 bottom-[20%]">
+    <div class="w-[165px] absolute flex flex-col items-center bottom-28 ">
+      <div v-for="item in development" :key="item.alt">
+        <ImageComponent :src="item.source" :alt="item.alt" height="100%" :width="item.width" />
+      </div>
+    </div>
+
+
+    <div class=" hidden md:block absolute w-[800px] right-1 bottom-[20%]">
       <div class="flex flex-col mb-6">
         <p class="text-white text-right text-lg font-['Poppins']">
           Ofrecemos una solución unica a nuestros clientes mediante la recopilacion e integracion de datos producidos en
@@ -141,6 +153,24 @@ import Radar from '~/assets/Radar.svg'
 import Sarah from '~/assets/Sarah.svg'
 import Tornado from '~/assets/Tornado.svg'
 import RockD from '~/assets/RockD.svg'
+
+
+const development = [
+  {
+    alt: "strata-d",
+    source: "/STRATA ID LOGO BLANCO.png",
+    width: 165
+  }
+  , {
+    alt: "d-link",
+    source: "/ID-LINK-LOGO-BLANCO-FINAL-COPYRIGHT.png",
+    width: 117,
+  }, {
+    alt: "d-daq",
+    source: "/ID-DAQ-LOGO-BLANCO.png",
+    width: 114
+  }
+]
 </script>
 
 <style></style>
