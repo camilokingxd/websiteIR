@@ -22,7 +22,7 @@
       <div class="hidden md:block"
         style="width: 900px; height: 3.23px; background: linear-gradient(90deg, #CEDF00 0%, #92BA00 100%)"></div>
     </div>
-    <div class="flex absolute right-0 mt-72 z-50 flex-col">
+    <div class="md:hidden flex absolute right-0 mt-72 z-50 flex-col">
       <div style="border-radius:15px 0px 0px 15px; background: linear-gradient(268.18deg, #CEDF00 9.85%, #92BA00 42.83%);"
         class=" sm:hidden w-72 h-16  z-20  flex items-center">
         <p class="text-black text-center text-xs font-medium font-['Poppins']">Ofrecemos una solución única a nuestros
