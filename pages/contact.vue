@@ -2,7 +2,6 @@
     <div class="relative contact w-full h-screen flex-shrink-0 -z-10 ">
         <ImageComponent src="/SECCIONCONTACT.jpeg" class="h-screen" />
         <!-- <ImageComponent src="/ContactGif.gif" class="h-80 w-80 absolute top-0 z-10" /> -->
-
     </div>
     <div class="text-white text-lg font-normal top-10 absolute">
         <p>
