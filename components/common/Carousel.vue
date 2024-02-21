@@ -31,9 +31,9 @@ const carouselItems = ref([
   }
 ])
 
-function updateActiveIndex(newIndex: any) {
-  activeIndex.value = newIndex;
-}
+/* function updateActiveIndex(newIndex: any) {
+  activeIndex.value = newIndex; 
+} */
 
 onMounted(() => {
   const updateCarousel = () => {
