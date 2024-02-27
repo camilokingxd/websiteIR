@@ -1,17 +1,12 @@
 <template>
-    <div class="relative contact w-full h-screen flex-shrink-0 -z-10 ">
-        <ImageComponent src="/SECCIONCONTACT.jpeg" class="h-screen" />
-        <!-- <ImageComponent src="/ContactGif.gif" class="h-80 w-80 absolute top-0 z-10" /> -->
-    </div>
-    <div class="text-white text-lg font-normal top-10 absolute">
-        <p>
-            Nuestras Ubicaciones
-        </p>
-    </div>
+   <div class="relative  w-full h-screen">
+    <ImageComponent src="/SECCIONCONTACT.jpeg" class="absolute contact inset-0 h-full w-full object-cover" />
+    <ContactForm />
+  </div>
 </template>
 
 <script lang="ts" setup>
-
+    import ContactForm from '~/components/common/ContactComponent.vue'
 </script>
 
 <style>
