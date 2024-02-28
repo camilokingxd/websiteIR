@@ -24,16 +24,19 @@
 
       </div>
 
+
     </div>
 
-    <div style="border-radius:15px 0px 0px 15px; background: linear-gradient(268.18deg, #CEDF00 9.85%, #92BA00 42.83%);"
+    <div
+      style="border-radius:15px 0px 0px 15px; background: linear-gradient(175.19deg, rgba(0, 58, 49, 0.8) -115.37%, #000000 103.78%);"
       class="w-72 h-16 absolute top-[215px] right-0 z-20">
-      <p class="text-black text-center text-xs font-medium font-['Poppins']">Ofrecer un desarrollo innovador en cuanto a
-        tecnología en recopilación de información de rocas y fluidos para
+      <p class=" my-3 text-white text-center font-['Poppins']" style="font-size: 0.6em;">
+        Ofrecer un desarrollo innovador en cuanto a tecnología en recopilación de información de rocas y fluidos para
         maximizar los datos adquiridos durante la perforación. </p>
       <div class="absolute right-0">
         <ImageComponent src="/MaskHome.png" class="w-[160px] " :fontControlled="false" />
-        <p class="right-0 top-5 absolute text-center text-white text-xs font-semibold font-['Poppins'] leading-normal">
+        <p class="right-0 top-7 absolute text-center text-white font-semibold font-['Poppins'] leading-normal"
+          style="font-size: 0.7em;">
           Todo comienza en el pozo</p>
         <div
           class="btn btn-circle btn-active  bg-white shadow-xl w-40 h-5 flex flex-col justify-center items-center absolute right-0 top-32 ">

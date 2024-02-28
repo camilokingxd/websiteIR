@@ -1,10 +1,12 @@
 <template>
   <div class="hidden sm:flex flex-col box-border justify-center items-center absolute right-0 bottom-1/4">
     <div class="flex flex-col mb-7">
-      <p
-        class="w-[939.19px] text-white text-lg xl:text-3xl text-right font-semibold font-['Poppins'] self-end xl:w-[996px]">
-        Ofrecer un desarrollo innovador en cuanto a tecnología en recopilación de información de rocas y fluidos para
-        maximizar los datos adquiridos durante la perforación. </p>
+      <div class="flex flex-row px-2">
+        <p
+          class="w-[939.19px] text-white text-lg xl:text-3xl text-right font-semibold font-['Poppins'] self-end xl:w-[996px]">
+          Ofrecer un desarrollo innovador en cuanto a tecnología en recopilación de información de rocas y fluidos para
+          maximizar los datos adquiridos durante la perforación. </p>
+      </div>
       <div class="w-[900px] h-2 xl:w-[996px] self-end"
         style=" background: linear-gradient(90deg, #CEDF00 0%, #92BA00 100%)"></div>
     </div>
