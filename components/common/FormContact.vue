@@ -1,42 +1,49 @@
 <template>
-    <div class="contact-form sm:w-12 p-10 rounded-lg  border border-rose-500">
-        <form class="mb-4">
-            <h1 class="text-center text-black text-2xl font-bold mb-6">Contáctanos</h1>
-            <div class="mb-4">
-                <label class="block text-gray-700 text-sm mb-2" for="name">
+    <div class="relative flex flex-col items-center bg-app-white/60 xl:w-80 lg:w-80 md:w-80 sm:w-5/6 xs:w-5/6  rounded-lg mt-14 ">
+        <h1 class="text-center text-black text-2xl mt-8 mb-3.5 font-semibold  ">Contáctanos</h1>
+        <div  class="absolute -top-8 mx-auto flex justify-center items-center rounded-xl bg-app-green  h-16 w-44"  >
+            <svg class="" width="65" height="44" viewBox="0 0 65 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M64.2859 38.9071C64.2476 38.9992 64.194 39.0912 64.1709 39.1833C63.6033 41.5921 61.6853 43.1187 59.1998 43.1264C51.3366 43.1264 43.4734 43.1264 35.6102 43.1264C25.7601 43.1264 15.91 43.1264 6.05994 43.1264C2.78425 43.1264 0.712891 41.0551 0.712891 37.7794C0.712891 27.0164 0.712891 16.2611 0.712891 5.49809C0.712891 2.25308 2.79187 0.166443 6.01387 0.166443C8.00077 0.166443 9.98768 0.166443 11.9746 0.166443C12.9258 0.166443 13.5012 0.642075 13.4935 1.41689C13.4935 2.18403 12.9105 2.65198 11.9515 2.65198C10.049 2.65198 8.14655 2.65198 6.23637 2.65198C6.03691 2.65198 5.8374 2.65198 5.60726 2.65198C5.69165 2.95116 5.89883 3.06625 6.04458 3.21968C13.5165 10.6993 20.9962 18.1789 28.4758 25.6509C30.9153 28.0904 34.0606 28.0904 36.4924 25.6662C41.9928 20.1658 47.4932 14.6654 53.0013 9.15735C53.1471 9.01159 53.2775 8.86584 53.431 8.70474C53.2085 8.53597 52.9707 8.61268 52.7635 8.61268C48.6056 8.61268 44.4477 8.61268 40.2821 8.61268C40.075 8.61268 39.8678 8.62801 39.6607 8.59733C39.0393 8.50527 38.5714 7.94527 38.5944 7.33923C38.6097 6.7562 39.07 6.23453 39.6684 6.15014C39.8678 6.11946 40.0827 6.13481 40.2898 6.13481C45.3376 6.13481 50.3854 6.13481 55.4409 6.14249C55.8705 6.14249 56.1696 6.01973 56.4688 5.72054C57.4354 4.73093 58.425 3.76434 59.5451 2.65965C59.1385 2.65965 58.9083 2.65965 58.6705 2.65965C47.079 2.65965 35.4952 2.65965 23.9037 2.65965C23.6735 2.65965 23.4434 2.67501 23.2209 2.64432C22.5535 2.57528 22.0702 2.0306 22.0779 1.39387C22.0855 0.749475 22.5841 0.235477 23.2592 0.181777C23.4663 0.166434 23.6735 0.181777 23.8806 0.181777C35.5335 0.181777 47.1787 0.181777 58.8316 0.181777C61.7621 0.181777 63.4421 1.47058 64.2169 4.309C64.2246 4.34736 64.2629 4.37038 64.2859 4.40874V38.9301V38.9071ZM59.8289 40.5795C59.7905 40.3417 59.6448 40.2496 59.5297 40.1345C53.9833 34.5881 48.4368 29.0417 42.898 23.4876C42.6065 23.196 42.4531 23.2114 42.1693 23.4876C40.8344 24.8454 39.4843 26.1879 38.1341 27.5304C34.8891 30.7524 30.1098 30.7524 26.8648 27.5304C25.553 26.2339 24.2411 24.9375 22.9677 23.618C22.5918 23.2267 22.3847 23.173 21.9705 23.595C16.5314 29.0724 11.0616 34.5191 5.60726 39.9811C5.45383 40.1345 5.24674 40.265 5.16235 40.5641H59.8212L59.8289 40.5795ZM3.19842 21.6081C3.19842 26.9857 3.19842 32.3634 3.19842 37.7487C3.19842 37.9789 3.19844 38.2013 3.21378 38.4315C3.22912 38.6616 3.33655 38.7307 3.52834 38.5542C3.65108 38.4392 3.76612 38.3241 3.88119 38.209C9.33557 32.7546 14.7899 27.2926 20.2673 21.8459C20.6816 21.4393 20.6049 21.2552 20.2367 20.8946C14.9127 15.5937 9.61177 10.2774 4.29548 4.97641C4.02698 4.70792 3.72781 4.1479 3.45164 4.27831C3.08341 4.45476 3.20609 5.04545 3.19842 5.47505C3.19842 10.8527 3.19842 16.2304 3.19842 21.6157V21.6081ZM61.8081 21.585C61.8081 16.2457 61.8081 10.9141 61.8081 5.57478C61.8081 5.30628 61.8158 5.03012 61.7775 4.76929C61.7468 4.57751 61.7774 4.30134 61.555 4.23996C61.3709 4.18626 61.2557 4.43175 61.133 4.5545C55.6633 10.0242 50.1936 15.5016 44.7086 20.956C44.348 21.3166 44.394 21.4853 44.7238 21.8152C50.2319 27.3079 55.7323 32.8083 61.2327 38.3011C61.3631 38.4315 61.4705 38.7153 61.7007 38.6003C61.8771 38.5159 61.7927 38.2627 61.8004 38.0863C61.8158 37.9022 61.8004 37.7104 61.8004 37.5263C61.8004 32.21 61.8004 26.8937 61.8004 21.5774L61.8081 21.585Z" fill="white"/>
+            </svg>
+        </div>
+        <form class=" w-full flex flex-col items-center px-8">
+            <div class=" w-full">
+                <label class="block text-black text-lg" for="name">
                     Nombre
                 </label>
                 <input 
-                    class="bg-input w-full py-2 px-3 text-white-700 focus:outline-none" 
+                    class="bg-app-darkgreen/70 w-full font-light px-3 text-white-700 focus:outline-none" 
                     id="name" type="text" 
                     placeholder="Nombre"
                 >
             </div>
-            <div class="mb-4">
-                <label class="block text-gray-700 text-sm mb-2" for="email">
+            <div class=" w-full">
+                <label class="block text-black text-lg " for="email">
                     Correo
                 </label>
                 <input 
-                    class="bg-input w-full py-2 px-3 text-white-700 focus:outline-none" 
+                    class="bg-app-darkgreen/70 w-full px-3 text-white-700 focus:outline-none" 
                     id="email" 
                     type="email" 
                     placeholder="Correo" 
                 >
             </div>
-            <div class="mb-4">
-                <label class="block text-gray-700 text-sm mb-2" for="message">
+            <div class=" w-full">
+                <label class="block text-black text-lg " for="message">
                     Mensaje
                 </label>
                 <textarea 
-                    class="bg-input h-[10rem] w-full py-2 px-3 text-white-700 focus:outline-none" 
+                    class="bg-app-darkgreen/70 h-[8rem] w-full  px-3 text-white-700 focus:outline-none" 
                     id="message" 
                     placeholder="Mensaje"></textarea>
             </div>
+            <button type="submit" class="absolute bg-app-hlightgreen/50 -bottom-10 mx-auto font-bold h-10 w-60 text-center text-white rounded-b-lg">ENVIAR</button>
         </form>
     </div>
 </template>
 
 <script lang="ts" >
+    import VectorMail from '../../public/vectores/VectorMail.svg'
     export default {
         name: 'FormContactComponent',
     }

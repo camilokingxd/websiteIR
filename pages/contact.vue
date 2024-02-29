@@ -1,7 +1,10 @@
 <template>
-   <div class="relative  w-full h-screen">
-    <ImageComponent src="/SECCIONCONTACT.jpeg" class="absolute contact inset-0 h-full w-full object-cover" />
+   <div class="flex w-full flex-col items-center border-t bg-contact bg-gradient-to-b from-trasparent bg-cover bg-center to-app-blightgreen/60 ">
+    <!-- <ImageComponent src="/SECCIONCONTACT.jpeg" class="border-t contact inset-0 h-full w-full object-cover" /> -->
     <ContactForm />
+    <section class="mt-20">
+      <h3 class="text-2xl text-white font-semibold">Nuestras Ubicaciones</h3>
+    </section>
   </div>
 </template>
 

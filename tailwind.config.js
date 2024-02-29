@@ -3,6 +3,34 @@ export default {
   content: [],
   theme: {
     extend: {},
+    screens: {
+      'xs':	'200px',
+      'sm':	'640px',
+      'md':	'768px',
+      'lg':	'1024px',
+      'xl':	'1280px',
+      '2xl':	'1536px'
+    },
+    borderWidth: {
+      t: '1px'
+    },
+    borderColor: {
+      t: 'red'
+    },
+    backgroundImage: {
+      'contact': "url('/public/SECCIONCONTACT.jpeg')"
+    },
+    colors: {
+      app: {
+        green: '#99BE01',
+        white: '#EEEEEE',
+        darkgreen: '#6A7400',
+        blightgreen: '#575757',
+        hlightgreen: '#94BB01'
+      },
+      black: '#000000',
+      white: '#ffffff'
+    }
   },
   plugins: [require('daisyui')],
   daisyui: {
