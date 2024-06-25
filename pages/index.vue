@@ -3,13 +3,12 @@
 </template>
 
 <script setup lang="ts">
-
 import home from './home.vue'
 import company from './company.vue'
 import services from './services.vue'
 import contact from './contact.vue'
 
-const route = useRoute();
+const route = useRoute()
 
 const currentComponent = computed(() => {
   switch (route.path) {
@@ -25,6 +24,4 @@ const currentComponent = computed(() => {
       return home
   }
 })
-
-
 </script>
