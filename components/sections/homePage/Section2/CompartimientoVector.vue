@@ -57,4 +57,3 @@ import ComportamientoVector4 from "~/assets/ComportamientoVector4.svg";
 
 </script>
 
-<style></style>

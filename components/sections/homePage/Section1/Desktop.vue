@@ -45,4 +45,3 @@ const setActiveComponent = (component: string) => {
 };
 </script>
 
-<style></style>

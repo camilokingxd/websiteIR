@@ -15,4 +15,3 @@ import EvaluationVector from "~/assets/EvaluationVector.svg";
 
 </script>
 
-<style></style>

@@ -69,4 +69,3 @@ import NuestraVision from "~/assets/NuestraVision.svg";
 
 </script>
 
-<style></style>

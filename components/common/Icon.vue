@@ -98,4 +98,3 @@ const isMobile = ref(false)
 
 </script>
 
-<style></style>

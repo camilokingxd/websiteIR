@@ -154,4 +154,3 @@ const secondColumn = components.slice(6, 12);
 
 </script>
 
-<style></style>

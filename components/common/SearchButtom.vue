@@ -16,4 +16,3 @@ function onClick() {
 
 </script>
 
-<style></style>

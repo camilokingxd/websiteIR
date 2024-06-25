@@ -91,4 +91,3 @@ const toggleButton = (sectionName: string) => {
 
 </script>
 
-<style></style>

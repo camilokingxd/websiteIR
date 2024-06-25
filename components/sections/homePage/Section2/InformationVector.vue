@@ -28,4 +28,3 @@ import InformacionGeologica from "~/assets/InformacionGeologica.svg";
 
 </script>
 
-<style></style>

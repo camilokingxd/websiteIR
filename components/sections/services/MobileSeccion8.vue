@@ -124,4 +124,3 @@ const firstColumn = components.slice(0, 5);
 const secondColumn = components.slice(5, 12);
 </script>
 
-<style></style>

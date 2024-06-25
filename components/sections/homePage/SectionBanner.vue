@@ -1,5 +1,5 @@
 <template>
-  <section class="relative min-w-full h-[426px] md:min-h-screen ">
+  <section class="relative min-w-full h-[426px] md:min-h-screen">
     <SocialMediaSidebar />
     <Carousel />
     <WelcomeSectionBanner />
@@ -7,10 +7,5 @@
 </template>
 
 <script lang="ts" setup>
-import SocialMediaSidebar from '~/components/common/SocialMediaSidebar.vue';
-
-
-
+import SocialMediaSidebar from '~/components/common/SocialMediaSidebar.vue'
 </script>
-
-<style></style>

@@ -52,4 +52,3 @@ const calculateSvgSize = (originalSize: number) => {
 };
 </script>
 
-<style></style>

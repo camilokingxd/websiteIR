@@ -49,4 +49,3 @@ import Services from "~/assets/Services.svg";
 import Codify from "~/assets/Codify.svg";
 </script>
 
-<style></style>

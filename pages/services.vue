@@ -6,4 +6,3 @@
 
 </script>
 
-<style></style>

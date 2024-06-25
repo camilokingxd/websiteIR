@@ -31,4 +31,3 @@ import IniciosVector from "~/assets/IniciosVector.svg";
 
 </script>
 
-<style></style>
